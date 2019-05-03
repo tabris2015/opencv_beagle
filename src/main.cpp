@@ -20,7 +20,7 @@ int main(int argc, char** argv )
         printf("No image data \n");
         return -1;
     }
-    imwrite("cam.jpg", image);
+    imwrite("cam.png", image);
     waitKey(0);
     return 0;
 }
