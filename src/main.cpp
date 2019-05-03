@@ -14,7 +14,7 @@ int main(int argc, char** argv )
     cap.set(CAP_PROP_FRAME_WIDTH, 320);
     cap.set(CAP_PROP_FRAME_HEIGHT, 240);
     cap.set(CAP_PROP_FOURCC, VideoWriter::fourcc('Y','U','Y','V'));
-    
+
     std::cout << "resolucion: 320x240 \n";
     if(!cap.isOpened()) return -1;
 
@@ -28,6 +28,6 @@ int main(int argc, char** argv )
         return -1;
     }
     std::cout << "guardando imagen \n";
-    imwrite("cam.png", image);
+    imwrite("cam.jpg", image);
     return 0;
 }
