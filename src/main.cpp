@@ -13,7 +13,8 @@ int main(int argc, char** argv )
     VideoCapture cap(0);
     cap.set(CAP_PROP_FRAME_WIDTH, 320);
     cap.set(CAP_PROP_FRAME_HEIGHT, 240);
-    cap.set(CAP_PROP_MODE, VideoWriter::fourcc('Y','U','Y','V'));
+    cap.set(CAP_PROP_FOURCC, VideoWriter::fourcc('Y','U','Y','V'));
+    
     std::cout << "resolucion: 320x240 \n";
     if(!cap.isOpened()) return -1;
 
