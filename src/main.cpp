@@ -27,6 +27,5 @@ int main(int argc, char** argv )
     }
     std::cout << "guardando imagen \n";
     imwrite("cam.png", image);
-    waitKey(0);
     return 0;
 }
